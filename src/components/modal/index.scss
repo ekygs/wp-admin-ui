@@ -1,0 +1,64 @@
+.wau-modal {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 110%;
+  display: flex;
+  font-family: sans-serif;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  transition: bottom 0s 0.4s, opacity 0.4s ease-out;
+  width: 100%;
+  z-index: 1000;
+
+  &__dialog {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    max-width: 600px;
+    position: relative;
+    transform: scale(0.7);
+    transition: transform 0.4s ease-out;
+    width: 100%;
+  }
+
+  &.wau-modal--open {
+    bottom: 0%;
+    opacity: 1;
+    transition: bottom 0s, opacity 0.4s ease-out;
+
+    .wau-modal__dialog {
+      transform: scale(1);
+    }
+  }
+
+  &__header {
+    display: block;
+    padding: 1.5rem 4rem 0.75rem 1.5rem;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__close {
+    font-size: 1.125rem;
+    top: 1rem;
+    position: absolute;
+    right: 1.5rem;
+  }
+
+  &__content {
+    padding: 0.75rem 1.5rem;
+  }
+
+  &__footer {
+    padding: 0.75rem 1.5rem;
+    text-align: right;
+  }
+}

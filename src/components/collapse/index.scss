@@ -1,0 +1,12 @@
+.wau-collapse {
+  height: 0;
+  overflow: hidden;
+  visibility: visible;
+  transition: height 0.4s ease-out;
+
+  &.wau-collapse--open {
+    overflow: visible;
+    transition: none;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,49 @@
+.wau-input {
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  font-family: sans-serif;
+  display: flex;
+  padding: 4px 8px;
+  position: relative;
+  width: 100%;
+
+  &--focused {
+    border-color: #286ede;
+  }
+
+  &__input {
+    border: none !important;
+    font: 14px sans-serif;
+    line-height: 30px;
+    margin: 0;
+    outline: none;
+    padding: 0 !important;
+    width: 100%;
+
+    &:focus {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+
+    &::placeholder {
+      font-size: inherit;
+      opacity: 0.5;
+    }
+  }
+
+  &__prefix,
+  &__suffix {
+    font-size: 0.8rem;
+  }
+
+  &__prefix {
+    padding: 0 8px 0 0;
+  }
+
+  &__suffix {
+    padding: 0 0 0 8px;
+  }
+}

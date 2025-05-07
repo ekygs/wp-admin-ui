@@ -1,0 +1,50 @@
+.wau-checkbox {
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+
+  &__box {
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    margin: 0 0.75rem 0 0;
+    transition: background-color 0.2s ease-out;
+    width: 20px;
+  }
+
+  &__icon {
+    color: #fff;
+    font-size: 1rem;
+    transform: scale(0);
+    transform-origin: left bottom;
+    transition: transform 0.2s ease-out;
+  }
+
+  &__input {
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+
+    &:checked {
+      + .wau-checkbox__icon {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &__label {
+    font-weight: 500;
+  }
+
+  &--checked {
+    .wau-checkbox__box {
+      background-color: #286ede;
+    }
+  }
+}

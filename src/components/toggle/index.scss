@@ -1,0 +1,53 @@
+.wau-toggle {
+  display: block;
+
+  &__prefix,
+  &__suffix {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0 0 0 0.25rem;
+  }
+
+  &__suffix {
+    padding: 0 0.25rem 0 0;
+  }
+
+  &__container {
+    align-items: center;
+    display: flex;
+  }
+
+  &__button {
+    background: #f9f9f9;
+    border: 1px solid #d5d5d5;
+    border-radius: 100px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16) inset;
+    cursor: pointer;
+    display: block;
+    margin: 0 1rem;
+    padding: 0.15rem;
+    transition: background-color 0.4s ease-out;
+    width: 55px;
+  }
+
+  &__toggle {
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 500px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+    display: block;
+    height: 25px;
+    transition: transform 0.4s ease-out;
+    width: 25px;
+  }
+
+  &.wau-toggle--checked {
+    .wau-toggle__button {
+      background-color: #ebf1fc;
+    }
+
+    .wau-toggle__toggle {
+      transform: translateX(21px);
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.wau-textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  padding: 4px 8px;
+  position: relative;
+  width: 100%;
+
+  &--focused {
+    border-color: #286ede;
+  }
+
+  &__input {
+    border: none !important;
+    font: 14px sans-serif;
+    line-height: 1.4;
+    margin: 0;
+    min-height: 100px;
+    outline: none;
+    padding: 0;
+    width: 100%;
+
+    &:focus {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+
+    &::placeholder {
+      font-size: inherit;
+      opacity: 0.5;
+    }
+  }
+}

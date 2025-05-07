@@ -1,0 +1,101 @@
+.wau-button {
+  background-color: transparent;
+  border: 1.5px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.4s ease-out, border-color 0.4s ease-out;
+
+  &:hover {
+    color: #286ede;
+    border-color: #286ede;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin: 0 0.5rem 0;
+  }
+
+  &.wau-button--danger {
+    color: #b01e0c;
+
+    &:hover {
+      border-color: #b01e0c;
+      color: #b01e0c;
+    }
+  }
+
+  &.wau-button--small {
+    font-size: 12px;
+  }
+
+  &.wau-button--primary {
+    border-color: #286ede;
+    background-color: #286ede;
+    color: #fff;
+
+    &.wau-button--danger {
+      background-color: #b01e0c;
+      border-color: #b01e0c;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &.wau-button--text {
+    border-color: transparent;
+
+    &.wau-button--danger {
+      color: #b01e0c;
+    }
+
+    &:hover {
+      border-color: transparent;
+      background-color: #f2f2f2;
+    }
+  }
+
+  &.wau-button--link {
+    border-color: transparent;
+    color: #286ede;
+
+    &.wau-button--danger {
+      color: #b01e0c;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.wau-button--round {
+    border-radius: 500px;
+  }
+
+  &.wau-button--icon {
+    align-items: center;
+    display: inline-flex;
+    height: 2rem;
+    justify-content: center;
+    padding: 0;
+    width: 2rem;
+
+    &.wau-button--small {
+      height: 0.8rem;
+      width: 0.8rem;
+    }
+  }
+
+  &.wau-button--disabled {
+    cursor: not-allowed;
+    filter: opacity(0.5);
+  }
+}

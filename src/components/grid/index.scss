@@ -1,0 +1,28 @@
+.wau-grid {
+  &__row {
+    align-items: flex-start;
+    display: flex;
+    margin: 0 -1rem;
+
+    &.wau-grid__row--vcentered {
+      align-items: center;
+    }
+
+    &.wau-grid__row--vbottom {
+      align-items: flex-end;
+    }
+
+    &.wau-grid__row--hend {
+      justify-content: flex-end;
+    }
+  }
+
+  &__col {
+    box-sizing: border-box;
+    padding: 0 1rem;
+
+    &.wau-grid__col--hend {
+      text-align: right;
+    }
+  }
+}
